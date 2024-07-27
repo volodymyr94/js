@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+   <p>Задача 0. Обчислити значення виразів S1=a+12+b S2=a+b2a S3=3(a+b)c S4=sin⁡(a-b)</p> 
+	<script>
+		////введення
+			let a = parseFloat(prompt('Введіть значення a', '0'))
+			const s = 12
+			let b = parseFloat(prompt('Введіть значення b', '0'))
+
+			////обчислення
+			let S1 = a + 12 + b
+			let S2 = Math.sqrt((a + b) / 2 * a)
+			let S3 = Math.sin(a / -b)
+
+			////виведення результату
+			document.write(`
+							<ol class="list__container">
+   							<li>
+   							   Сума S1 = ${S1}
+   							</li>
+   							<li>
+      							Сума S2 = ${S2}
+   							</li>
+   							<li>
+   							   Сума S3 = ${S3}
+  								 </li>
+							</ol>
+								`)
+	</script>
+</body>
+
+</html>
