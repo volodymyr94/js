@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
+
 <body>
-		<p>Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</p>
-		<h2><a href="../index.html">вернутись у dz-2</a></h2>
-		<h2><a href="../index.html">main page</a></h2>
-		<script>
-			//введення
-			
-			let sum1 = parseInt(prompt('cвведіть суму!! ', '2'))
-			let sum2 = parseFloat(prompt('введіть суму!! ', '10'))
-			//обчислення
-			sumAdd = sum1 + sum2
-			sumMn = sum1 * sum2
-			sumDl = sum1 / sum2
-			//виведення результату
-			document.write(`<h2>сума  = ${sumAdd} <br> добуток = ${sumMn}  <br> частка = ${sumDl}  </h2>`)
-		</script>
+	<p>Задача 0. З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова</p>
+	<h2><a href="../index.html">вернутись у dz-2</a></h2>
+	<h2><a href="../index.html">main page</a></h2>
+	<script>
+		////введення
+
+		let ivan = prompt("кільки цукерок в івана?")
+		let ira = prompt("кільки цукерок в іри,??")
+
+		////обчислення
+		if (ivan > ira) {
+			document.write(` у іван більше цукерок `)
+		} else if (ivan < ira) {
+			document.write(` у іра більше цукерок `)
+		} else document.write(` однаково  цукерок `)
+	</script>
 </body>
+
 </html>
