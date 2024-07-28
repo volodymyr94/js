@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2><a href="../index.html">вернутись у dz-3</a></h2>
+
+	<h1>Задача 5.</h1>
+	<p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.</p>
+	<script>
+		const category = (prompt("назва категорії водія??", "a"))
+
+		//обчислення
+		if (category === "a") {
+			alert(` можете керувати мотоциклом `)
+		} else if (category === "b") {
+			alert(` можете керувати легковим авто `)
+		} else if (category === "c") {
+			alert(` можете керувати вантажним авто `)
+		}  else if (category !== "c" && category !== "b"  && category !== "c") {
+			alert(` введіть коректно дані `)
+		}
+	</script>
+</body>
+
+</html>

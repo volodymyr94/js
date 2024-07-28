@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 </head>
-<body>
-	<p>Задача 4. Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
-	<h2><a href="../index.html">вернутись у dz-2</a></h2>
-	<h2><a href="../index.html">main page</a></h2>
-	
-	<script>
-		//введення
 
-			let sm = parseFloat(prompt('введіть сдовжину в см.!! ', '100'))
-			//обчислення
-			let m = sm / 100
-			let km = m / 1000
-			//виведення результату
-			document.write(`<h2>сантиметри  = ${sm} <br> метри = ${m}  <br> кілометри = ${km}  </h2>`)
+<body>
+	<h2><a href="../index.html">вернутись у dz-3</a></h2>
+
+	<h1>Задача 4.</h1>
+	<p>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).</p>
+	<script>
+		const ege = parseFloat(prompt("ваш вік??", "40"))
+
+		//обчислення
+		if (ege <= 6) {
+			alert(` ти дитинa у садочку `)
+		} else if (ege <= 15) {
+			alert(` ти школяр `)
+		} else if (ege <= 21) {
+			alert(` ти студент `)
+		} else if (ege <= 60) {
+			alert(` ти працівник `)
+		}else alert(` ти пенсіонер`)
 	</script>
 </body>
+
 </html>

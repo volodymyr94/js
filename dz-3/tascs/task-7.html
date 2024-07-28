@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2><a href="../index.html">вернутись у dz-3</a></h2>
+
+	<h1>Задача 6.</h1>
+	<p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+	<script>
+		const namberMoon = parseInt(prompt("введіть номер місяця", "4"))
+
+		//обчислення
+		if (namberMoon <= 2) {
+			alert(` зима `)
+		} else if (namberMoon <= 5) {
+			alert(` весна `)
+		} else if (namberMoon <= 8) {
+			alert(` літо `)
+		} else if (namberMoon <= 11) {
+			alert(` зима `)
+		} else if (namberMoon === 12) {
+			alert(` зима `)
+		} else if (namberMoon > 12) {
+			alert(` такого місяця нема`)
+		} 
+	</script>
+</body>
+
+</html>
